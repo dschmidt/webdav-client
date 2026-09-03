@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { readFile } from "fs/promises";
 import {
+    displaynameTagParser,
     parseXML,
     type WebDAVEntityDecoderOptions,
     type WebDAVParsingContext
 } from "../../../source/index.js";
-import { displaynameTagParser } from "../../../source/tools/dav.js";
 
 describe("parseXML", function () {
     it("keeps numeric-looking displaynames", async function () {
